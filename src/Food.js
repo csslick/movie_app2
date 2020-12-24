@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function Food({fav, image}) {
+export default function Food({name, image, rate}) {
     return (
         <div>
-            <p>I Like {fav}</p>
-            <img src={image} alt={fav} width="200" />
+            <p>I Like {name}</p>
+            <p>{rate}/5.0</p>
+            <img src={image} alt={name} width="200" />
         </div>
     )
 }
